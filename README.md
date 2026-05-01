@@ -6,8 +6,8 @@ Bioinformatics pipeline for mitochondrial genome assembly, annotation and charac
 
 ## Associated publication
 
-> **Novel mitogenomic resources for Mediterranean elasmobranchs**
-> *(citation to be added upon publication)*
+> **Novel mitogenomic resources for Mediterranean elasmobranchs (Spiga et al.)**
+> *(in preparation)*
 
 ---
 
