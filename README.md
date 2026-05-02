@@ -72,9 +72,3 @@ pip install viennarna
 All R code is embedded in `pipeline.md` with inline explanations
 
 ---
-
-## Citation
-
-If you use this pipeline, please cite the associated publication (above) and the relevant tools listed under Dependencies.
-
----
