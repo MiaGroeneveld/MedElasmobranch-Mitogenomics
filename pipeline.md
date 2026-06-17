@@ -669,11 +669,20 @@ fastp \
 
 The `.html` file contains the L-value (mean read length after trimming).
 
+### Merge reads if >1 individual per species was sequenced - example
+```bash
+zcat sampleA_R1.trimmed.fastq.gz \
+     sampleB_R1.trimmed.fastq.gz | gzip -c > sample_merged_R1.trimmed.fastq.gz
+
+zcat sampleA_R2.trimmed.fastq.gz \
+     sampleB_R2.trimmed.fastq.gz | gzip -c > sample_merged_R2.trimmed.fastq.gz
+```
+
 ### Run Jellyfish to obtain k-mer histogram
 
 ```bash
-R1=/path/to/trimmed_folder/sample_R1.trimmed.fastq.gz
-R2=/path/to/trimmed_folder/sample_R2.trimmed.fastq.gz
+R1=/path/to/trimmed_merged_folder/sample_merged_R1.trimmed.fastq.gz
+R2=/path/to/trimmed_merged_folder/sample_merged_R2.trimmed.fastq.gz
 
 # count k-mers
 zcat $R1 $R2 | jellyfish count \
